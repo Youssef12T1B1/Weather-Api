@@ -1,0 +1,43 @@
+
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/main.css' %}" />
+    <title>Weather Status</title>
+</head>
+
+<body>
+    <div class= 'container'>
+    <form class="Search_form" method="post" action="">
+        {% csrf_token %}
+        
+            <label>
+          
+            <title>search For a city Weather</title>   </label>
+          <input  name='q' placeholder="Search for Weather" />
+          <center> <button type="submit" >  <span data-hover="Search">Search</span> </button></center>
+     
+    </form>
+
+
+
+    <div class="weather_status">
+        <img src="https://openweathermap.org/img/w/{{icon}}.png" alt="Img">
+
+        <p>City/Country: <span> {{city}}</span></p>
+        <p>{{description}}</p<br>
+        <p>temprature: <span> {{temprature}} </span>F°</p>
+        <p>humidity: <span>{{humidity}}</span> %</p>
+        <p>Wind: <span> {{wind}} </span> km/h </p>
+        
+        
+
+    </div>
+</div>
+
+
+</body>
+</html>

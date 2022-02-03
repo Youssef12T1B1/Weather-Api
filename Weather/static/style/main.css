@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background: black;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .container{
+      margin: 0 auto;
+      padding: 20px 20px;
+  }
+
+  .Search_form{
+
+    width: 400Px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 1px 2px 3px black;
+    
+    
+  }
+  .Search_form input{
+    padding: 10px 12px;
+    border-radius: 4px;
+    border: 1px solid white;
+    font-size: 1em;
+    width: 100%;
+  }
+  
+  .Search_form label{
+    display: block;
+    margin: 20px 0 10px ;
+  }
+  .Search_form button{
+    font-size: 1.3em;
+    margin-top: 30px;
+    border-radius: 26px;
+    background: #fee996;
+    border:0;
+  }
+
+  .weather_status{
+    border: 1px solid white;
+    width: 400Px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 1px 2px 3px black;
+    text-align: center;
+    
+
+  }
+  
+  .weather_status p{
+    text-align: center;
+    color: white;
+    font-family: cursive;
+  }  
+.weather_status span{
+    font-family: serif;
+color: white;
+}
+  button{
+    margin: 30px 0 0 0;
+    padding: 0;
+    align-items: center;
+    
+    }
+    
+    button span{
+    line-height: 35px;
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: 0.50px;
+    padding: 2px 27px;
+    background: #02ABB0;
+    border-radius: 1px;
+    transition: transform 0.3s;
+    transform-origin: 50% 0%;
+    transform-style: preserve-3d;
+    
+    }
+    button  span::before{
+    position:absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 52%;
+    color: black;
+    background: yellow;
+    border-radius: 1px;
+    padding: 2px 27px;
+    transition: background 0.3s;
+    transform: rotateX(-90deg);
+    content: attr(data-hover);
+    transform-origin: 50% 0%;
+    }
+    
+    button  span:hover,
+    button  span:focus{
+    transform: rotateX(90deg) translateY(-22px);
+    }
